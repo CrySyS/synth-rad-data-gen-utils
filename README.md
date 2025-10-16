@@ -1,7 +1,7 @@
 # Synthetic radiation data generation utilities 
 This project contains various utilities that can be used to generate synthetic background radiotion time series data, imitate a real radiation sensor and simulate cyber-attacks on radiation detection scenarios.
 
-## Ydata-syntbetic
+## Ydata-synthetic
 For the synthetic time series data generation, this project utilizes the ydata-synthetic library:
 
 https://pypi.org/project/ydata-synthetic/
