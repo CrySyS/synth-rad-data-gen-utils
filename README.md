@@ -75,3 +75,6 @@ This tool is designed for creating large databases, for AI training and research
 - Attacks that conceal a real radiation alarm.
 
 Further information on this tool can be found at `attack-simulator/README.md`.
+
+## RDS simulator
+This tool is designed to provide a highly customizable simulation of a Radiation Detection System. You can define sensors on a map, introduce an attacker with specified attacks, and monitor the state of the system through Grafana dashboard. For further information see `RDS-simulator/README.md`.
