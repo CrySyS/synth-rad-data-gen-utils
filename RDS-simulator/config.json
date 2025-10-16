@@ -1,0 +1,66 @@
+{
+    "runtime_hours": 3,
+    "influxdb": {
+        "org": "rds-test-org",
+        "token": "rds-test-token",
+        "bucket": "rds-test-bucket"
+    },
+    "user": {
+        "username": "admin",
+        "password": "admin123"
+    },
+    "containernames": {
+        "sensor": "rds-sensor",
+        "receiver": "rds-receiver",
+        "influxdb": "rds-influxdb",
+        "grafana": "rds-grafana",
+        "attacker": "rds-attacker",
+        "mapprovider": "rds-map-provider"
+    },
+    "sensors": [
+        {
+            "latitude": 170.0,
+            "longitude": 290.0
+        },
+        {
+            "latitude": 140.0,
+            "longitude": 260.0
+        },
+        {
+            "latitude": 250.0,
+            "longitude": 200.0
+        },
+        {
+            "latitude": 200.0,
+            "longitude": 270.0
+        },
+        {
+            "latitude": 320.0,
+            "longitude": 190.0
+        }
+
+    ],
+    "attacker": {
+        "initial_delay_minutes": 2,
+        "time_between_attacks_minutes": 5,
+        "attacks": [
+            {
+                "target_id": 1,
+                "attack_length_minutes": 2,
+                "attack_frequency_seconds": 10,
+                "values_to_send": [
+                    200.4,
+                    210.5
+                ]
+            },
+            {
+                "target_id": 3,
+                "attack_length_minutes": 3,
+                "attack_frequency_seconds": 3,
+                "values_to_send": [
+                    213.4
+                ]
+            }
+        ]
+    }
+}

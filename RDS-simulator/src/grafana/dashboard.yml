@@ -1,0 +1,10 @@
+apiVersion: 1
+
+providers:
+  - name: 'general'
+    folder: ''
+    type: file
+    options:
+      path: /etc/grafana/dashboards/general
+      disableDeletion: false
+      updateIntervalSeconds: 600
