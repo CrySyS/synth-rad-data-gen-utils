@@ -142,7 +142,7 @@ Once you have your configuration `json` file, you can start up the simulation by
 ```bash
 ./setup.sh config.json
 ```
-Once the simulation started the grafana dsahboard can be opend in the web browser at `http://localhost:3000`
+Once the simulation started the grafana dsahboard can be opend in the web browser at `http://localhost:3000`. Please note that the sensors can take a couple minutes to start broadcasting measurements. While they are "calibrating" the grafan dashboard shows a reading of `-1` for each sensor.
 
 Once you want to shut the simulation down, you can do so with the `stop.sh` script. You also need to give it **the same** configuration file with which you started the simulation:
 ```bash
